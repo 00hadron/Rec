@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/miRec"
+        android:id="@+id/recordFragment"
         android:title="Record"
         android:icon="@drawable/ic_record"
        android:orderInCategory="0"
@@ -11,7 +11,7 @@
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/rec_list"
+        android:id="@+id/recListFragment2"
         android:title="List"
         android:icon="@drawable/ic_rec_list"
         android:orderInCategory="5"
