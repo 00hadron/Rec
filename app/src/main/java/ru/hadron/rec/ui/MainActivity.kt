@@ -2,6 +2,8 @@ package ru.hadron.rec.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.res.ResourcesCompat
+import androidx.core.graphics.TypefaceCompat
 import androidx.navigation.NavHostController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -14,6 +16,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_AppTheme)
+
+/*        var tvtimer = supportFragmentManager.findFragmentById(R.id.tvTimer)
+        val typeface = ResourcesCompat.getFont(this, R.font.element)
+        tvtimer.*/
 
         setContentView(R.layout.activity_main)
         this.resolveUiProblems()

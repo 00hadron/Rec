@@ -1,9 +1,13 @@
 package ru.hadron.rec.ui.fragments
 
 import android.Manifest
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_record.*
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
 import ru.hadron.rec.R
@@ -15,9 +19,14 @@ class RecordFragment : Fragment(R.layout.fragment_record), EasyPermissions.Permi
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         this.requestPermissions()
+
+        //set font on timer
+        var timer = view.findViewById<TextView>(R.id.tvTimer)
+        val typeface = activity?.baseContext?.let { ResourcesCompat.getFont(it, R.font.element) }
+        timer.typeface = typeface
     }
 
-    fun requestPermissions() {
+    private fun requestPermissions() {
         if (RecordingUtility.hasWriteReadExternalStorageAndRecordAudioPermissions(requireContext())) { return }
 
         EasyPermissions.requestPermissions(
