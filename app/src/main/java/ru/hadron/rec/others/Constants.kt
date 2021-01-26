@@ -8,4 +8,10 @@ object Constants {
     const val ACTION_PAUSE_SERVICE = "ACTION_PAUSE_SERVICE"
     const val ACTION_STOP_SERVICE = "ACTION_STOP_SERVICE"
 
+    const val ACTION_SHOW_RECORD_FRAGMENT = "ACTION_SHOW_RECORD_FRAGMENT"
+
+    const val NOTIFICATION_CHANNEL_ID = "recording_channel"
+    const val NOTIFICATION_CHANNEL_NAME = "recording"
+    const val NOTIFICATION_ID = 1
+
 }

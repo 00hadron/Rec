@@ -2,6 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph.xml"
     app:startDestination="@id/recordFragment">
+
+    <action
+        android:id="@+id/action_global_Recording_fragment"
+        app:destination="@id/recordFragment"
+        app:launchSingleTop="true"/>
+
     <fragment
         android:id="@+id/recordFragment"
         android:name="ru.hadron.rec.ui.fragments.RecordFragment"
