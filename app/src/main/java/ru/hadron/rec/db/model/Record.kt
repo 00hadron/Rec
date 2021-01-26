@@ -6,8 +6,10 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "record_table")
 data class Record (
    // val id: Int? = null,
-    val title: String = "",
-    var timestamp: Long = 0L
+    val title: String = "", //file name
+    val recordFilePath: String = "",
+    val recordLengthInMs: Long = 0L,
+    var timestamp: Long = 0L //date time of the record
 ) {
     @PrimaryKey
         (autoGenerate = true)
