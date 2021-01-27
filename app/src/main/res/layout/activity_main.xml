@@ -13,7 +13,7 @@
     android:layout_height="wrap_content"
     app:fabCradleMargin="20dp"
     app:fabCradleRoundedCornerRadius="100dp"
-    app:fabCradleVerticalOffset="10dp"
+    app:fabCradleVerticalOffset="24dp"
     android:layout_gravity="bottom">
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -28,7 +28,9 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_mic"
+        app:fabCustomSize="96dp"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:rippleColor="@android:color/holo_red_dark"
         app:layout_anchor="@id/bottomAppBar"/>
 
     <fragment

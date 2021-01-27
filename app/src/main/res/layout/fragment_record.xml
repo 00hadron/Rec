@@ -11,18 +11,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00"
-        android:textSize="150sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvComment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="тут будет запись"
+        android:fontFamily="monospace"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStopTest"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="monospace"
+        android:text="stop"
+        app:icon="@drawable/ic_stop"
+        app:layout_constraintBottom_toTopOf="@+id/tvTimer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
