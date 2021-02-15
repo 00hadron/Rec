@@ -64,9 +64,11 @@ class RecordFragment : Fragment(R.layout.fragment_record), EasyPermissions.Permi
             this,
             "You need to accept this permissions",
             REQUEST_CODE_WR_STORAGE_RECORD_AUDIO_PERMISSIONS,
+            Manifest.permission.RECORD_AUDIO,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.RECORD_AUDIO
+            Manifest.permission.READ_EXTERNAL_STORAGE
+
+
         )
     }
 

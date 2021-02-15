@@ -10,9 +10,9 @@ object RecordingUtility {
     fun hasWriteReadExternalStorageAndRecordAudioPermissions(context: Context) =
         EasyPermissions.hasPermissions(
             context,
+            Manifest.permission.RECORD_AUDIO,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.RECORD_AUDIO
+            Manifest.permission.READ_EXTERNAL_STORAGE
         )
 
     fun getFormattedStopWatchTime(ms: Long, includeMillis: Boolean = false, includeHours: Boolean = false) : String {
